@@ -1,0 +1,26 @@
+# android toolchains compressed archive
+android-ndk-*.zip
+
+# extracted android toolchains
+android-ndk-*/
+
+# extracted library source folders
+libgcrypt*/
+libgpg-error-*/
+libotr-*/
+
+# library source packages
+*.tar.gz
+*.tar.bz2
+
+# used for compiling to a prefix target
+prefixes/
+
+# used for logging the build process to disk
+logs/
+
+# used for final output, ready for Android Studio or Visual Studio (Xamarin)
+lib/
+
+# forcefully don't ignore the generated libgpg-error syscfg patches
+!libgpg-error-syscfg/
