@@ -11,7 +11,7 @@ if [ -z "$TARGET_ABI" ]; then echo "Assuming target ABI is a GNU/Linux host (if 
    TARGET_ABI="$HOST_ARCH-linux-gnu"
 fi
 
-TARGET_OUT="$ROOT/prefixes/$TARGET_ABI"
+TARGET_OUT="$PREFIXES_DIR/$TARGET_ABI"
 
 if [ ! -d "${TARGET_OUT}" ]; then echo "Creating output directory $TARGET_OUT"
    mkdir -p $TARGET_OUT
